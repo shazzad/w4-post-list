@@ -108,10 +108,6 @@ class W4PL_List_Terms_Posts extends W4PL_List implements W4PL_List_Interface {
 			$template_nav = $nav_match[0];
 		}
 
-		// print_r( $this->terms_args );
-		// unset(  $this->terms_args['order'], $this->terms_args['orderby']  );
-		// print_r(  $this->terms_args  );
-
 		$this->terms_query = new W4PL_Terms_Query( $this->terms_args );
 		$this->terms_query->query();
 

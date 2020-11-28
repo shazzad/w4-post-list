@@ -112,6 +112,8 @@ Each list have a unique id. Display a list by using `[postlist id="LIST_ID"]`.
 3. Preview 2
 
 == Changelog ==
+= 2.3.8 =
+* New: Added term_order clasue for Terms list to order terms (by Category Order and Taxonomy Terms Order plugin).
 = 2.3.5 =
 * Updated: WordPress version compatibility meta.
 = 2.3.4 =
