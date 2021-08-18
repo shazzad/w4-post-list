@@ -2,7 +2,7 @@
 Contributors: sajib1223
 Tags: post, post list, custom post list, custom post type, widget, shortcode, media
 Requires at least: 5.2
-Tested up to: 5.5
+Tested up to: 5.6.2
 Requires PHP: 5.6
 Stable tag: 2.3.6
 License: GPLv3
@@ -112,6 +112,9 @@ Each list have a unique id. Display a list by using `[postlist id="LIST_ID"]`.
 3. Preview 2
 
 == Changelog ==
+= 2.4.0 =
+* Fixed: Previous pagination link were not showing on page 2.
+* Fixed: Default 10 lists per page were showing on block editor list select. Made it to 100.
 = 2.3.8 =
 * New: Added term_order clasue for Terms list to order terms (by Category Order and Taxonomy Terms Order plugin).
 = 2.3.5 =
