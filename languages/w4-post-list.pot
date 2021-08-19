@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: W4 Post List\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/w4-post-list/\n"
-"POT-Creation-Date: 2021-03-08 14:12:08+00:00\n"
+"POT-Creation-Date: 2021-08-19 02:44:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -256,7 +256,7 @@ msgstr ""
 msgid "Display a list from w4 post list plugin."
 msgstr ""
 
-#: blocks.php:77
+#: blocks.php:79
 msgid "No list selected."
 msgstr ""
 
@@ -947,7 +947,7 @@ msgid "Continue reading &raquo;"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://w4dev.com/plugins/w4-post-list"
+msgid "https://w4dev.com/plugins/w4-post-list"
 msgstr ""
 
 #. Description of the plugin/theme
