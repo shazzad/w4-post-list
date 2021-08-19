@@ -39,8 +39,8 @@ function w4pl_register_block() {
 			'editor_script'   => 'w4pl_block',
 			'attributes'      => array(
 				'listId'    => array(
-					'type'    => 'number',
-					'default' => 0,
+					'type'    => 'string',
+					'default' => '',
 				),
 				'className' => array(
 					'type'    => 'string',

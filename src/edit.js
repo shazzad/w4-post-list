@@ -57,7 +57,7 @@ export default class Edit extends Component {
 
 		return posts.map((post) => {
 			return {
-				value: post.id,
+				value: post.id.toString(),
 				label: `${post.title.rendered} (#${post.id})`
 			}
 		})
@@ -74,7 +74,7 @@ export default class Edit extends Component {
 	}
 
 	render() {
-		const { listId } = this.props.attributes;
+		const { attributes } = this.props;
 		const { choices } = this.state
 
 		return (
@@ -84,7 +84,7 @@ export default class Edit extends Component {
 						<PanelRow>
 							<ComboboxControl
 								label="Select a list"
-								value={listId}
+								value={attributes.listId}
 								options={choices}
 								onChange={this.onListSelect}
 								onFilterValueChange={this.onListSearch}
@@ -98,7 +98,7 @@ export default class Edit extends Component {
 				<Disabled>
 					<ServerSideRender
 						block="w4-post-list/postlist"
-						attributes={{ listId: parseInt(listId, 10) || 0 }}
+						attributes={attributes}
 					/>
 				</Disabled>
 			</>

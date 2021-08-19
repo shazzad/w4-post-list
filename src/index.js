@@ -13,8 +13,8 @@ registerBlockType('w4-post-list/postlist', {
 	category: 'widgets',
 	attributes: {
 		listId: {
-			type: 'number',
-			default: 0
+			type: 'string',
+			default: ''
 		}
 	},
 	edit: Edit

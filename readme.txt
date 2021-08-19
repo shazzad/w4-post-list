@@ -1,7 +1,7 @@
 === W4 Post List ===
 Contributors: sajib1223
 Tags: post, post list, custom post list, custom post type, widget, shortcode, media
-Requires at least: 5.2
+Requires at least: 5.8
 Tested up to: 5.8
 Requires PHP: 5.7
 Stable tag: 2.4.0
