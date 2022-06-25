@@ -44,9 +44,9 @@ class W4PL_Admin_Page_Docs {
 	public function admin_page() {
 		$current_tab = isset( $_REQUEST['tab'] ) ? $_REQUEST['tab'] : 'template-examples';
 		$tabs = array(
-			'template-examples' => __( 'Template' ),
-			'template-tags' => __( 'Template Tags' ),
-			'usage' => __( 'Usage' ),
+			'template-examples' => __( 'Template', 'w4-post-list' ),
+			'template-tags' => __( 'Template Tags', 'w4-post-list' ),
+			'usage' => __( 'Usage', 'w4-post-list' ),
 		);
 		?>
 		<div class="wrap w4pl-documentation-wrap">

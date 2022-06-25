@@ -43,7 +43,7 @@ class W4PL_Helper_Posts {
 		$fields['before_field_group_query'] = array(
 			'position' => '51',
 			'html'     => '<div id="w4pl_field_group_query" class="w4pl_field_group">
- 								<div class="w4pl_group_title">Posts</div>
+ 								<div class="w4pl_group_title">' . esc_html__( 'Posts', 'w4-post-list' ) . '</div>
  								<div class="w4pl_group_fields"><div class="w4pl_group_fields_wrap">',
 		);
 
@@ -67,7 +67,7 @@ class W4PL_Helper_Posts {
 				'label'       => __( 'Post mime type', 'w4-post-list' ),
 				'type'        => 'checkbox',
 				'option'      => $mime_type_options,
-				'desc'        => 'if displaying attachment, choose mime type to restrcit result to specific file types.',
+				'desc'        => __( 'if displaying attachment, choose mime type to restrcit result to specific file types.', 'w4-post-list' ),
 			);
 		}
 
@@ -93,7 +93,7 @@ class W4PL_Helper_Posts {
 			'label'       => __( 'Search keywords', 'w4-post-list' ),
 			'type'        => 'text',
 			'input_class' => 'widefat',
-			'desc'        => 'search posts',
+			'desc'        => __( 'search posts', 'w4-post-list' ),
 		);
 		$fields['post__in']        = array(
 			'position'    => '65',
@@ -102,7 +102,7 @@ class W4PL_Helper_Posts {
 			'label'       => __( 'Include posts', 'w4-post-list' ),
 			'type'        => 'text',
 			'input_class' => 'widefat',
-			'desc'        => 'comma separated post id',
+			'desc'        => __( 'comma separated post id', 'w4-post-list' ),
 		);
 		$fields['post__not_in']    = array(
 			'position'    => '66',
@@ -111,7 +111,7 @@ class W4PL_Helper_Posts {
 			'label'       => __( 'Exclude posts', 'w4-post-list' ),
 			'type'        => 'text',
 			'input_class' => 'widefat',
-			'desc'        => 'comma separated post id',
+			'desc'        => __( 'comma separated post id', 'w4-post-list' ),
 		);
 		$fields['post_parent__in'] = array(
 			'position'    => '67',
@@ -120,7 +120,7 @@ class W4PL_Helper_Posts {
 			'label'       => __( 'Post parent', 'w4-post-list' ),
 			'type'        => 'text',
 			'input_class' => 'widefat',
-			'desc'        => 'display child posts. comma separated parent post ids',
+			'desc'        => __( 'display child posts. comma separated parent post ids', 'w4-post-list' ),
 		);
 		$fields['author__in']      = array(
 			'position'    => '68',
@@ -129,7 +129,7 @@ class W4PL_Helper_Posts {
 			'label'       => __( 'Post author', 'w4-post-list' ),
 			'type'        => 'text',
 			'input_class' => 'widefat',
-			'desc'        => 'comma separated user/author ids. use 0 to indicate current user.',
+			'desc'        => __( 'comma separated user/author ids. use 0 to indicate current user.', 'w4-post-list' ),
 		);
 		$fields['author__not_in']  = array(
 			'position'    => '68.1',
@@ -138,7 +138,7 @@ class W4PL_Helper_Posts {
 			'label'       => __( 'Exclude post author', 'w4-post-list' ),
 			'type'        => 'text',
 			'input_class' => 'widefat',
-			'desc'        => 'comma separated user/author ids. use 0 to indicate current user.',
+			'desc'        => __( 'comma separated user/author ids. use 0 to indicate current user.', 'w4-post-list' ),
 		);
 
 		$fields['exclude_self']  = array(
@@ -148,10 +148,10 @@ class W4PL_Helper_Posts {
 			'label'       => __( 'Exclude self', 'w4-post-list' ),
 			'type'        => 'radio',
 			'option'      => array(
-				''    => 'No',
-				'yes' => 'Yes',
+				''    => __( 'No', 'w4-post-list' ),
+				'yes' => __( 'Yes', 'w4-post-list' ),
 			),
-			'desc'        => 'exclude current post on single post/page pages',
+			'desc'        => __( 'exclude current post on single post/page pages', 'w4-post-list' ),
 		);
 		$fields['child_of_self'] = array(
 			'position'    => '69.1',
@@ -160,10 +160,10 @@ class W4PL_Helper_Posts {
 			'label'       => __( 'Child of self', 'w4-post-list' ),
 			'type'        => 'radio',
 			'option'      => array(
-				''    => 'No',
-				'yes' => 'Yes',
+				''    => __( 'No', 'w4-post-list' ),
+				'yes' => __( 'Yes', 'w4-post-list' ),
 			),
-			'desc'        => 'display child posts of current post/page/custom post type',
+			'desc'        => __( 'display child posts of current post/page/custom post type', 'w4-post-list' ),
 		);
 
 		$fields['orderby'] = array(
@@ -183,8 +183,8 @@ class W4PL_Helper_Posts {
 			'label'       => __( 'Order', 'w4-post-list' ),
 			'type'        => 'radio',
 			'option'      => array(
-				'ASC'  => 'ASC',
-				'DESC' => 'DESC',
+				'ASC'  => __( 'ASC', 'w4-post-list' ),
+				'DESC' => __( 'DESC', 'w4-post-list' ),
 			),
 		);
 
@@ -194,7 +194,7 @@ class W4PL_Helper_Posts {
 			'name'        => 'w4pl[limit]',
 			'label'       => __( 'Maximum items', 'w4-post-list' ),
 			'type'        => 'text',
-			'desc2'       => 'maximum results to display in total, restrict number of items even while paginating',
+			'desc2'       => __( 'maximum results to display in total, restrict number of items even while paginating', 'w4-post-list' ),
 		);
 
 		if ( 'posts' === $options['list_type'] ) {
@@ -204,7 +204,7 @@ class W4PL_Helper_Posts {
 				'name'        => 'w4pl[offset]',
 				'label'       => __( 'Offset', 'w4-post-list' ),
 				'type'        => 'text',
-				'desc2'       => 'skip given number of posts from beginning. while building lists using the same filters but to display on separate places, use offset to skip the previously displayed amount of posts',
+				'desc2'       => __( 'skip given number of posts from beginning. while building lists using the same filters but to display on separate places, use offset to skip the previously displayed amount of posts', 'w4-post-list' ),
 			);
 			$fields['posts_per_page'] = array(
 				'position'    => '75',
@@ -213,8 +213,7 @@ class W4PL_Helper_Posts {
 				'label'       => __( 'Items per page', 'w4-post-list' ),
 				'type'        => 'text',
 				'placeholder' => get_option( 'posts_per_page' ),
-				'desc'        => 'number of items to show per page
- 				<br />use <strong>-1</strong> to display all',
+				'desc'        => __( 'number of items to show per page<br />use <strong>-1</strong> to display all', 'w4-post-list' ),
 			);
 		}
 
@@ -237,10 +236,10 @@ class W4PL_Helper_Posts {
 					'label'       => __( 'Group by Date', 'w4-post-list' ),
 					'type'        => 'radio',
 					'option'      => array(
-						'post_date'     => 'Publish date',
-						'post_modified' => 'Modified date',
+						'post_date'     => __( 'Publish date', 'w4-post-list' ),
+						'post_modified' => __( 'Modified date', 'w4-post-list' ),
 					),
-					'desc2'       => 'which date we will use to caculate the group time',
+					'desc2'       => __( 'which date we will use to caculate the group time', 'w4-post-list' ),
 				);
 			} elseif ( in_array( $options['groupby'], array( 'meta_value' ) ) ) {
 				$fields['groupby_meta_key'] = array(
@@ -259,9 +258,9 @@ class W4PL_Helper_Posts {
 				'label'       => __( 'Group Order', 'w4-post-list' ),
 				'type'        => 'radio',
 				'option'      => array(
-					''     => 'None',
-					'ASC'  => 'ASC',
-					'DESC' => 'DESC',
+					''     => __( 'None', 'w4-post-list' ),
+					'ASC'  => __( 'ASC', 'w4-post-list' ),
+					'DESC' => __( 'DESC', 'w4-post-list' ),
 				),
 			);
 		}

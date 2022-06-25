@@ -31,50 +31,50 @@ class W4PL_User_Template_Tags {
 			'user_id'     => array(
 				'group'    => 'User',
 				'callback' => array( 'W4PL_User_Template_Tags', 'user_id' ),
-				'desc'     => '<strong>Output</strong>: user id',
+				'desc'     => __( '<strong>Output</strong>: user id', 'w4-post-list' ),
 			),
 			'user_name'   => array(
 				'group'    => 'User',
 				'callback' => array( 'W4PL_User_Template_Tags', 'user_name' ),
-				'desc'     => '<strong>Output</strong>: user name',
+				'desc'     => __( '<strong>Output</strong>: user name', 'w4-post-list' ),
 			),
 			'user_email'  => array(
 				'group'    => 'User',
 				'callback' => array( 'W4PL_User_Template_Tags', 'user_email' ),
-				'desc'     => '<strong>Output</strong>: user email',
+				'desc'     => __( '<strong>Output</strong>: user email', 'w4-post-list' ),
 			),
 			'user_link'   => array(
 				'group'    => 'User',
 				'func'     => 'user_link',
 				'callback' => array( 'W4PL_User_Template_Tags', 'user_link' ),
-				'desc'     => '<strong>Output</strong>: user post page link',
+				'desc'     => __( '<strong>Output</strong>: user post page link', 'w4-post-list' ),
 			),
 			'user_count'  => array(
 				'group'    => 'User',
 				'callback' => array( 'W4PL_User_Template_Tags', 'user_count' ),
-				'desc'     => '<strong>Output</strong>: user posts count',
+				'desc'     => __( '<strong>Output</strong>: user posts count', 'w4-post-list' ),
 			),
 			'user_bio'    => array(
 				'group'    => 'User',
 				'callback' => array( 'W4PL_User_Template_Tags', 'user_bio' ),
-				'desc'     => '<strong>Output</strong>: user description / biography',
+				'desc'     => __( '<strong>Output</strong>: user description / biography', 'w4-post-list' ),
 			),
 			'user_meta'   => array(
 				'group'    => 'User',
 				'code'     => '[user_meta key="" multiple="0"]',
 				'callback' => array( 'W4PL_User_Template_Tags', 'user_meta' ),
-				'desc'     => '<strong>Output</strong>: user meta value. if return value is an array, it will be migrated to string by using explode function
-				<br /><br /><strong>Attributes:</strong>
+				'desc'     => __( '<strong>Output</strong>: user meta value. if return value is an array, it will be migrated to string by using explode function
+				<br /><br /><strong>Attributes</strong>:
 				<br /><strong>key</strong> = (text|number), meta key name
 				<br /><strong>multiple</strong> = (0|1), display meta value at multiple occurence
-				<br /><strong>sep</strong> = (text), separate array meta value into string',
+				<br /><strong>sep</strong> = (text), separate array meta value into string', 'w4-post-list' ),
 			),
 			'user_avatar' => array(
 				'group'    => 'User',
 				'callback' => array( 'W4PL_User_Template_Tags', 'user_avatar' ),
-				'desc'     => '<strong>Output</strong>: user avatar
-				<br /><br /><strong>Attributes:</strong>
-				<br /><strong>size</strong> = (number), avatar image size, ex: 32, 64, 128',
+				'desc'     => __( '<strong>Output</strong>: user avatar
+				<br /><br /><strong>Attributes</strong>:
+				<br /><strong>size</strong> = (number), avatar image size, ex: 32, 64, 128', 'w4-post-list' ),
 			),
 		);
 

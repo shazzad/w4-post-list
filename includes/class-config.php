@@ -126,7 +126,7 @@ class W4PL_Config {
 		}
 
 		if ( ! empty( $mime_types ) ) {
-			$return = array( '' => 'Any' );
+			$return = array( '' =>  _x( 'Any', 'Media Type', 'w4-post-list' ) );
 			foreach ( $mime_types as $mime_type ) {
 				if ( ! empty( $mime_type ) ) {
 					$return[ $mime_type ] = $mime_type;
@@ -228,9 +228,9 @@ class W4PL_Config {
 
 	public static function tax_query_field_options() {
 		return array(
-			'term_id' => 'Term id',
-			'name'    => 'Name',
-			'slug'    => 'Slug',
+			'term_id' => __( 'Term id', 'w4-post-list' ),
+			'name'    => __( 'Name', 'w4-post-list' ),
+			'slug'    => __( 'Slug', 'w4-post-list' ),
 		);
 	}
 

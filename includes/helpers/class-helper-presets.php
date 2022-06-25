@@ -38,11 +38,11 @@ class W4PL_Helper_Presets {
 			'position'    => '3.1',
 			'option_name' => 'preset',
 			'name'        => 'w4pl[preset]',
-			'label'       => 'Preset',
+			'label'       => __( 'Preset', 'w4-post-list' ),
 			'type'        => 'select',
 			'option'      => self::preset_options( $options['list_type'] ),
 			'input_class' => 'w4pl_onchange_lfr',
-			'desc'        => 'preset is predefined templates',
+			'desc'        => __( 'preset is predefined templates', 'w4-post-list' ),
 		);
 
 		if ( isset( $options['preset'] ) && ! empty( $options['preset'] ) ) {

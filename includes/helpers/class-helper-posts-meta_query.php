@@ -169,10 +169,10 @@ class W4PL_Helper_Meta_Query {
 		);
 
 		$html .= '<p class="wffdw2">';
-		$html .= '<br />For the value field, you can also use following shortcodes to apply dynamic value:';
-		$html .= '<br /><code>[w4pl_date day=+6 hour=-1 format="Y-m-d H:i:s"]</code> - for displaying datetime based on current time';
-		$html .= '<br /><code>[w4pl_time day=+6 hour=-1]</code> - for displaying timestamp based on current time';
-		$html .= '<br /><br />Note: Above Shortcodes generates times in GMT timezone. To compare time saved in another timezone, use hour attribute. for example: [w4pl_date hour=+6] will generate the time what is identical to GMT+6 timestamp.';
+		$html .= __( '<br />For the value field, you can also use following shortcodes to apply dynamic value:', 'w4-post-list' );
+		$html .= __( '<br /><code>[w4pl_date day=+6 hour=-1 format="Y-m-d H:i:s"]</code> - for displaying datetime based on current time', 'w4-post-list' );
+		$html .= __( '<br /><code>[w4pl_time day=+6 hour=-1]</code> - for displaying timestamp based on current time', 'w4-post-list' );
+		$html .= __( '<br /><br />Note: Above Shortcodes generates times in GMT timezone. To compare time saved in another timezone, use hour attribute. for example: [w4pl_date hour=+6] will generate the time what is identical to GMT+6 timestamp.', 'w4-post-list' );
 		$html .= '</p>';
 
 		$html .= '</div><!--.wffw-->';
