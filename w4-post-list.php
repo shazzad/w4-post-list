@@ -5,7 +5,7 @@
  * Description: This plugin lets you create a list of - Posts, Terms, Users, Terms + Posts and Users + Posts. Outputs are completely customizable using Shortcode, HTML & CSS. Read documentation plugin usage.
  * Version: 2.5.5
  * Requires at least: 5.8
- * Requires PHP: 5.7
+ * Requires PHP: 7.4
  * Author: Shazzad Hossain Khan
  * Author URI: https://shazzad.me
  * Text Domain: w4-post-list
