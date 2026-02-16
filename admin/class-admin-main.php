@@ -47,7 +47,7 @@ class W4PL_Admin_Main {
 		global $post_ID;
 
 		$input_attr = sprintf(
-			'<input value="[postlist id=%d]" type="text" size="20" onfocus="this.select();" onclick="this.select();" readonly="readonly" />"',
+			'<input value="[postlist id=%d]" type="text" size="20" onfocus="this.select();" onclick="this.select();" readonly="readonly" />',
 			$post_ID
 		);
 
